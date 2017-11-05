@@ -29,11 +29,11 @@ PHP_INTERPRETER=php-fpm
 
 ### WORKSPACE ##########################################################################################################
 
-WORKSPACE_INSTALL_XDEBUG=false
+WORKSPACE_INSTALL_XDEBUG=true
 WORKSPACE_INSTALL_LDAP=false
 WORKSPACE_INSTALL_SOAP=false
 WORKSPACE_INSTALL_MONGO=false
-WORKSPACE_INSTALL_PHPREDIS=false
+WORKSPACE_INSTALL_PHPREDIS=true
 WORKSPACE_INSTALL_MSSQL=false
 WORKSPACE_INSTALL_NODE=false
 WORKSPACE_INSTALL_YARN=false
@@ -43,8 +43,8 @@ WORKSPACE_INSTALL_AEROSPIKE=false
 WORKSPACE_INSTALL_V8JS=false
 WORKSPACE_COMPOSER_GLOBAL_INSTALL=false
 WORKSPACE_INSTALL_WORKSPACE_SSH=false
-WORKSPACE_INSTALL_LARAVEL_ENVOY=false
-WORKSPACE_INSTALL_LARAVEL_INSTALLER=false
+WORKSPACE_INSTALL_LARAVEL_ENVOY=true
+WORKSPACE_INSTALL_LARAVEL_INSTALLER=true
 WORKSPACE_INSTALL_DEPLOYER=false
 WORKSPACE_INSTALL_LINUXBREW=false
 WORKSPACE_INSTALL_MC=false
@@ -64,13 +64,13 @@ WORKSPACE_SSH_PORT=2222
 
 ### PHP_FPM ############################################################################################################
 
-PHP_FPM_INSTALL_XDEBUG=false
+PHP_FPM_INSTALL_XDEBUG=true
 PHP_FPM_INSTALL_MONGO=false
 PHP_FPM_INSTALL_MSSQL=false
 PHP_FPM_INSTALL_SOAP=false
 PHP_FPM_INSTALL_ZIP_ARCHIVE=false
 PHP_FPM_INSTALL_BCMATH=false
-PHP_FPM_INSTALL_PHPREDIS=false
+PHP_FPM_INSTALL_PHPREDIS=true
 PHP_FPM_INSTALL_MEMCACHED=false
 PHP_FPM_INSTALL_OPCACHE=false
 PHP_FPM_INSTALL_EXIF=false
@@ -107,8 +107,8 @@ APACHE_PHP_UPSTREAM_TIMEOUT=60
 ### MYSQL ##############################################################################################################
 
 MYSQL_VERSION=8.0
-MYSQL_DATABASE=default
-MYSQL_USER=default
+MYSQL_DATABASE=portfolio
+MYSQL_USER=portfolio
 MYSQL_PASSWORD=secret
 MYSQL_PORT=3306
 MYSQL_ROOT_PASSWORD=root
@@ -201,7 +201,7 @@ PMA_DB_ENGINE=mysql
 
 # Credentials/Port:
 
-PMA_USER=default
+PMA_USER=portfolio
 PMA_PASSWORD=secret
 PMA_ROOT_PASSWORD=secret
 PMA_PORT=8080
@@ -308,7 +308,7 @@ DOCKER_HOST_IP=10.0.75.1
 
 # The Remote Interpreter entry matching name `laradock`
 
-PHP_IDE_CONFIG=serverName=laradock
+PHP_IDE_CONFIG=serverName=portfolio
 
 
 # Fix for windows users to make sure the application path works.
